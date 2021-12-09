@@ -1,0 +1,60 @@
+body {
+   font-family: verdana;
+}
+.calc {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.bitCalc, .input, .output, .tab {
+   display: flex;
+}
+.bitCalc {
+   flex-direction: column;
+   align-items: center;
+   border: 1px solid #ddd;
+   max-width: 680px;
+   padding: .5em;
+}
+.bitCalc > * {
+   margin: .5em;
+}
+input:focus-visible, select:focus-visible {
+	outline: 0;
+}
+.input {
+   justify-content: space-evenly;
+   width: 500px;
+}
+.output, .input {
+   flex-direction: row;
+}
+.input input {
+   width: 10em;
+   padding: .5em;
+   border: 1px solid #6f7;
+   border-radius: 4px;
+}
+.input select {
+   padding: .5em;
+   border-radius: 4px;
+   background-color: #6f7;
+}
+.tab {
+   flex-direction: column;
+}
+.input_number {
+   background-color: #6f7;
+   border-radius: 5px;
+   border: 1px solid #6f7;
+   margin: .5em;
+}
+.result {
+   width: 15em;
+   padding: .5em;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+}
+.result + label {
+   padding: .5em;
+}

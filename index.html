@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Калькулятор единиц информации</title>
+   <link rel="stylesheet" href="calcstyle.css">
+</head>
+
+<body>
+<div class="calc">
+   <form class="bitCalc">
+      <h3>Конвертер единиц информации</h3>
+      <div class="input">
+         <input type="number" id="basic" value="1">
+         <select name="opt" id="opt">
+            <option value="1">бит</option>
+            <option value="1024" >килобит</option>
+            <option value="1048576">мегабит</option>
+            <option value="1073741824">гигабит</option>
+            <option value="1099511627776">терабит</option>
+            <option value="8">байт</option>
+            <option value="8192">килобайт</option>
+            <option value="8388608">мегабайт</option>
+            <option value="8589934592">гигабайт</option>
+            <option value="8796093022208" selected>терабайт</option>
+         </select>
+      </div>
+      <span>Результат</span>
+      <div class="output">
+         <div class="tab">
+            <div class="input_number"><input type="number" class="result" id="bit" value="8796093022208"><label for="bit">бит</label></div>
+            <div class="input_number"><input type="number" class="result" id="kbit" value="8589934592"><label for="kbit">кбит</label></div>
+            <div class="input_number"><input type="number" class="result" id="mbit" value="8388608"><label for="mbit">Мбит</label></div>
+            <div class="input_number"><input type="number" class="result" id="gbit" value="8192"><label for="gbit">Гбит</label></div>
+            <div class="input_number"><input type="number" class="result" id="tbit" value="8"><label for="tbit">Тбит</label></div>
+         </div>
+         <div class="tab">
+            <div class="input_number"><input type="number" class="result" id="b" value="1099511627776"><label for="b">байт</label></div>
+            <div class="input_number"><input type="number" class="result" id="kb" value="1073741824"><label for="kb">кбайт</label></div>
+            <div class="input_number"><input type="number" class="result" id="mb" value="1048576"><label for="mb">Мбайт</label></div>
+            <div class="input_number"><input type="number" class="result" id="gb" value="1024"><label for="gb">Гбайт</label></div>
+            <div class="input_number"><input type="number" class="result" id="tb" value="1"><label for="tb">Тбайт</label></div>
+         </div>
+      </div>
+   </form>
+</div>
+
+<script async src="bitcalc.js"></script>
+</body>
+
+</html>
